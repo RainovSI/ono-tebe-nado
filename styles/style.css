@@ -14,18 +14,6 @@
   line-height: normal;
 }
 
-.address {
-  color: #000;
-  font-weight: 400;
-  font-size: 18px;
-  font-style: normal;
-  line-height: 24.3px;
-}
-
-.header__address {
-  max-width: 237px;
-}
-
 .header__links-list {
   display: flex;
   flex-direction: row;
@@ -49,10 +37,6 @@
   text-underline-offset: 5px;
 }
 
-.header__address {
-  justify-self: end;
-}
-
 .header__logo {
   display: block;
   justify-self: center;
@@ -64,6 +48,19 @@
   max-height: 100%;
 }
 
+.address {
+  color: #000;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 24.3px;
+  max-width: 237px;
+}
+
+.header__address {
+  justify-self: end;
+}
+
 .cover {
   position: relative;
   z-index: -2;
@@ -73,6 +70,7 @@
   background-image: url("/images/cover.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
+  margin: 0;
 }
 
 .overlay {
@@ -225,6 +223,8 @@
   text-decoration-line: underline;
   text-transform: uppercase;
   padding: 50px 40px 0px;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
 }
 
 .card__text {
@@ -243,6 +243,7 @@
   font-weight: 400;
   line-height: normal;
   margin: 30px 0px 0px 40px;
+  text-decoration-thickness: 1px;
   text-underline-offset: 5px;
   display: block;
 }
@@ -303,4 +304,55 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  align-items: center;
+  max-width: 1440px;
+  padding: 0px 50px 90px;
+  align-items: start;
+}
+
+.footer__menu-list-item {
+  list-style: none;
+}
+
+.footer__menu-link {
+  text-underline-offset: 5px;
+}
+
+.footer__menu {
+  color: #000;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  line-height: normal;
+  text-align: center;
+}
+
+.footer__menu-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__social-list {
+  display: flex;
+  column-gap: 48px;
+  justify-self: end;
+}
+
+.footer__social-link {
+  display: block;
+  width: 48px;
+  height: 48px;
+}
+
+.footer__social-list-item {
+  list-style: none;
+}
+
+.footer__menu-link_active {
+  text-decoration: none;
 }
